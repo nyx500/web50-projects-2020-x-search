@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'Product Sans';
+  /* Attributed to: https://www.fontmirror.com/product-sans */
+  src: url("product_sans400.ttf");
+}
+
+body {
+  font-family: 'Product Sans', sans-serif;
+}
+
+.menu {
+  margin: 16px;
+}
+
+.list-inline-item a {
+  display: inline;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.list-inline-item a:hover {
+  text-decoration: underline;
+}
+
+.list-inline-item a:active {
+  text-decoration: underline;
+}
+
+.my-size {
+  width: 50vw;
+  height: 30px;
+  border: 1px solid #bebebe;
+  margin: 6px;
+}
+
+.my-size:focus {
+  border: 1px solid blue;
+  -webkit-box-shadow: inset 0px 2px 2px lightgrey;
+          box-shadow: inset 0px 2px 2px lightgrey;
+}
+
+th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.first-th {
+  padding-left: 40px;
+  padding-right: 5px;
+}
+
+.last-td {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #505050;
+  font-size: 11px;
+  font-weight: 100;
+  padding-left: 10px;
+}
+
+.courier {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.search-spec {
+  font-size: 14px;
+}
+
+tbody:before {
+  /* The content property is used with the ::before and ::after pseudo-elements, to insert generated content. */
+  content: "@";
+  display: block;
+  line-height: 20px;
+  text-indent: -99999px;
+}
+
+.head {
+  padding: 50px;
+}
+
+.last-col {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #787878;
+}
+
+.main {
+  top: 60vw;
+}
+
+.header {
+  font-size: 86px;
+  font-weight: bolder;
+  margin: 15px;
+  padding: 5px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.top {
+  margin: 5vw;
+}
+
+/* Attributed to https://superuser.com/questions/95896/what-are-the-hex-values-of-the-google-logo-colors */
+.blue {
+  color: #278cf0;
+}
+
+.red {
+  color: #F90101;
+}
+
+.yellow {
+  color: #F2B50F;
+}
+
+.green {
+  color: #00933B;
+}
+
+.images {
+  position: fixed;
+  font-size: 16px;
+  -webkit-transform: translate(200%, 400%);
+          transform: translate(200%, 400%);
+  font-weight: initial;
+}
+
+.search-input {
+  border: 1px solid #c4c4c4;
+  border-radius: 25px;
+  /* This property should be responsive */
+  width: 49vw;
+  min-width: 300px;
+  /* This property should remain constant regardless of device width */
+  height: 45px;
+  padding: 10px;
+  text-indent: 45px;
+  background-image: url(search.png);
+  background-repeat: no-repeat;
+  background-position: 3% 50%;
+  background-size: 20px;
+  margin-bottom: 24px;
+}
+
+.search-input:hover {
+  -webkit-box-shadow: 1px 1px 2px 2px lightgrey;
+          box-shadow: 1px 1px 2px 2px lightgrey;
+}
+
+.search-input:focus {
+  -webkit-box-shadow: 1px 1px 2px 2px lightgrey;
+          box-shadow: 1px 1px 2px 2px lightgrey;
+}
+
+input:focus {
+  outline: none;
+}
+
+.navbar-header-advanced {
+  background-color: whitesmoke;
+}
+
+.navbar-brand {
+  font-size: 28.5px;
+  font-weight: bold;
+}
+
+.adv-search-heading {
+  border-bottom: 1px solid lightgrey;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.adv-search-heading h4 {
+  font-size: 20px;
+  color: #db0000;
+  margin-left: 20px;
+}
+
+.advanced-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  max-width: 120px;
+  background-color: #278cf0;
+  border: 1px solid #0a51bb;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bolder;
+  cursor: pointer;
+  height: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 9px;
+  padding-right: 9px;
+  /* The line-height property defines the amount of space above and below inline elements */
+  line-height: 0px;
+}
+
+.advanced-button:hover {
+  background-color: #3a84f1;
+  border: 1px solid #0846a1;
+}
+
+.advanced-button:focus {
+  outline: 1px solid navy;
+  outline-offset: 1px;
+}
+
+.button-searchbar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
+  margin: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 140px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  color: #505050;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  font-weight: lighter;
+  cursor: pointer;
+  line-height: 0px;
+}
+
+.button-searchbar:hover {
+  border: 1px solid lightgrey;
+  -webkit-box-shadow: 0px 1px 3px lightgrey;
+          box-shadow: 0px 1px 3px lightgrey;
+  color: #141414;
+}
+
+.button-searchbar:focus {
+  border: 1px solid #278cf0;
+}
+
+@media (max-width: 1056px) {
+  .last-col {
+    display: none;
+  }
+  .last-td {
+    display: none;
+  }
+}
+/*# sourceMappingURL=goog.css.map */
